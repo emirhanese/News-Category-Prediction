@@ -16,3 +16,14 @@ This program takes news text or news article as input from user, then predicts i
 
 # Images
 
+## Main Menu
+![](images/menu.png)
+
+## Register Menu
+![](images/register_menu.png)
+
+## Login Menu
+![](images/login.png)
+
+## Home Menu
+![](images/home.png)
