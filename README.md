@@ -16,3 +16,5 @@ This program takes news text or news article as input from user, then predicts i
 
 # Images
 
+## Menu Page
+![](images/menu.png)
