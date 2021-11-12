@@ -1,0 +1,33 @@
+<RCC>
+  <qresource prefix="image">
+    <file>user.jfif</file>
+  </qresource>
+  <qresource prefix="gif">
+    <file>newspaper.gif</file>
+    <file>newspaper-2.png</file>
+  </qresource>
+  <qresource prefix="tech">
+    <file>rsz_tech_science__2_-removebg-preview.png</file>
+  </qresource>
+  <qresource prefix="sport">
+    <file>rsz_sport.png</file>
+  </qresource>
+  <qresource prefix="entertainment">
+    <file>rsz_entertainment.png</file>
+  </qresource>
+  <qresource prefix="politics">
+    <file>rsz_politics-removebg-preview.png</file>
+  </qresource>
+  <qresource prefix="crime">
+    <file>rsz_crime-removebg-preview.png</file>
+  </qresource>
+  <qresource prefix="business">
+    <file>rsz_1business.png</file>
+  </qresource>
+  <qresource prefix="medical">
+    <file>rsz_medical-removebg-preview.png</file>
+  </qresource>
+  <qresource prefix="sport">
+    <file>rsz_sport.png</file>
+  </qresource>
+</RCC>
