@@ -1,4 +1,3 @@
-from random import choice
 from PyQt5 import QtCore
 from PyQt5 import QtGui
 from PyQt5.QtGui import QColor, QCursor
@@ -6,11 +5,9 @@ from PyQt5.QtWidgets import QCheckBox, QGraphicsDropShadowEffect, QLineEdit, QMe
 from PyQt5.QtWidgets import QMainWindow
 from main import *
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
-from playsound import playsound
 from database import Database
+# Importing our model from model.py
 from model import Model
-from threading import Thread
-from time import sleep
 
 GLOBAL_STATE = 0
 
@@ -98,7 +95,7 @@ class UIFunctions(QMainWindow):
         self.ui.checkbox_login.stateChanged.connect(lambda: UIFunctions.check(self, self.ui.checkbox_login, self.ui.passw_line_login))
         self.ui.mail_line.textChanged.connect(
             lambda: UIFunctions.onTexting(self))
-        # ! QDialog message eklenecek exit butonları için.
+        
         self.ui.exit_button.clicked.connect(lambda: UIFunctions.exitPopUp(self))
         self.ui.exit_button_2.clicked.connect(lambda: UIFunctions.exitPopUp(self))
 
@@ -116,7 +113,6 @@ class UIFunctions(QMainWindow):
             line.setEchoMode(
                 QLineEdit.EchoMode.Password)
 
-    # ! onTexting fonksiyonlarını birleştir.
     def onTexting(self):
         mails = ["@hotmail.com", "@gmail.com", "@outlook.com", "@yahoo.com"]
         if len(self.ui.mail_line.text()) == 0:
@@ -357,7 +353,6 @@ class UIFunctions(QMainWindow):
             self.ui.login_button_2.setCursor(
                 QCursor(QtCore.Qt.PointingHandCursor))
 
-    # ! Here we are !
     def login(self):
         usernames = self.database.getUsernames()
         username = self.ui.nickname_line_login.text()
@@ -459,7 +454,6 @@ class UIFunctions(QMainWindow):
             except Exception as e:
                 UIFunctions.error(self, "Unfortunately, registration failed.")
 
-            # ! Kayıt başarılı mesajı oluşturulacak.
 
         else:
             if check_email == 1 and check_username == 0:

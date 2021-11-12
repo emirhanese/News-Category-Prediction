@@ -1,4 +1,3 @@
-# Importing our Model class from model.py
 import sys
 
 from PyQt5 import QtWidgets
