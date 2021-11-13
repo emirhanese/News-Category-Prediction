@@ -10,7 +10,7 @@ class Database:
         )
 
         self.cursor = self.db.cursor(buffered=True)
-        #self.cursor.execute("CREATE DATABASE IF NOT EXISTS Persons")
+        self.cursor.execute("CREATE DATABASE IF NOT EXISTS Persons")
         self.cursor.execute("CREATE TABLE IF NOT EXISTS Person (name varchar(25), surname varchar(25), nickname varchar(25), password varchar(25), e_mail varchar(75), prediction_count smallint unsigned, personID INT AUTO_INCREMENT PRIMARY KEY)")
         self.prediction_count = int
         self.userId = int
