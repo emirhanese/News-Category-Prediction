@@ -442,6 +442,65 @@ class Ui_MainWindow(object):
 "border-radius: 8px;\n"
 "font: 12pt \"MS Shell Dlg 2\";\n"
 "color: rgb(0, 0, 0);")
+        self.news_text.verticalScrollBar().setStyleSheet("""
+        QScrollBar:vertical {
+	border: none;
+        background: rgb(45, 45, 68);
+        width: 14px;
+        margin: 15px 0 15px 0;
+	border-radius: 0px;
+        }
+
+        QScrollBar::handle:vertical {	
+	background-color: rgb(80, 80, 122);
+	min-height: 30px;
+	border-radius: 7px;
+        }
+        QScrollBar::handle:vertical:hover{	
+	background-color: rgb(255, 0, 127);
+        }
+        QScrollBar::handle:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+        }
+
+        QScrollBar::sub-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+        }
+        QScrollBar::sub-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+        }
+        QScrollBar::sub-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+        }
+
+        QScrollBar::add-line:vertical {
+	border: none;
+	background-color: rgb(59, 59, 90);
+	height: 15px;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+        }
+        QScrollBar::add-line:vertical:hover {	
+	background-color: rgb(255, 0, 127);
+        }
+        QScrollBar::add-line:vertical:pressed {	
+	background-color: rgb(185, 0, 92);
+        }
+
+        QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+	background: none;
+        }
+        QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	background: none;
+        }""")
         self.news_text.setObjectName("news_text")
         self.verticalLayout_4.addWidget(self.frame_4)
         self.label_10 = QtWidgets.QLabel(self.frame_2)
